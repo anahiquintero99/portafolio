@@ -62,7 +62,8 @@ section {
   object-fit: cover;
 }
 
-.banner .contentBx {
+.banner .contentBx,
+.sidebar {
   position: absolute;
   top: 0;
   right: 0;
@@ -118,4 +119,41 @@ p {
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 2px;
+}
+
+.sidebar {
+  position: fixed;
+  background: var(--black-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  padding: 40px;
+  z-index: 100;
+  right: -100%;
+}
+
+.sidebar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sidebar ul li {
+  list-style: none;
+}
+
+.sidebar ul li a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 2em;
+  margin: 10px 0;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sidebar ul li a:hover {
+  color: var(--blue-color);
 }
