@@ -3,4 +3,5 @@ const sidebar = document.querySelector('.sidebar');
 
 function toggleMenu() {
   menuToggle.classList.toggle('active');
+  sidebar.classList.toggle('active');
 }

@@ -133,6 +133,10 @@ p {
   right: -100%;
 }
 
+.sidebar.active {
+  right: 0;
+}
+
 .sidebar ul {
   display: flex;
   justify-content: center;
