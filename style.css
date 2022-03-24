@@ -2,6 +2,8 @@
 :root {
   --white-color: #fff;
   --black-color: #000;
+  --gray-color: #333;
+  --blue-color: #00bcd4;
 }
 
 * {
@@ -22,6 +24,7 @@
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .toggle.active {
@@ -29,4 +32,90 @@
   background-size: 25px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+section {
+  padding: 100px;
+  min-height: 100vh;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.banner .imgSidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 100%;
+}
+
+.banner .imgSidebar img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner .contentBx {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 500px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px;
+}
+
+.logoText {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: var(--gray-color);
+  color: var(--white-color);
+  padding: 0 5px;
+}
+
+.banner .contentBx h4 {
+  font-size: 1.5em;
+  color: var(--gray-color);
+  font-weight: 300;
+}
+
+.banner .contentBx h4 span {
+  font-size: 1.5em;
+  color: var(--blue-color);
+  font-weight: 700;
+}
+
+.banner .contentBx h2 {
+  font-size: 3em;
+  color: var(--gray-color);
+  line-height: 1em;
+}
+
+p {
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 300;
+}
+
+.btn {
+  background: var(--blue-color);
+  color: var(--white-color);
+  padding: 10px 30px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
