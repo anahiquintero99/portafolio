@@ -3,7 +3,7 @@
   --white-color: #fff;
   --black-color: #000;
   --gray-color: #333;
-  --blue-color: #00bcd4;
+  --blue-color: #ff5c8d;
 }
 
 * {
@@ -182,4 +182,33 @@ p {
 
 .sci li img:hover {
   opacity: 1;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+.title h2 {
+  position: relative;
+  color: var(--blue-color);
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.title p {
+  max-width: 700px;
+  display: inline-block;
+}
+
+.title h2::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background: var(--black-color);
 }
