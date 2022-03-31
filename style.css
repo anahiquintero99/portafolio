@@ -212,3 +212,16 @@ p {
   height: 4px;
   background: var(--black-color);
 }
+
+.title.white h2,
+.title.white p {
+  color: var(--white-color);
+}
+
+.title.white h2::before {
+  background: var(--white-color);
+}
+
+.about {
+  background: var(--black-color);
+}
