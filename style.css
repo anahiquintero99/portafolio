@@ -11,6 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .toggle {
@@ -224,4 +225,28 @@ p {
 
 .about {
   background: var(--black-color);
+}
+
+
+.about .content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.about .content .textBx {
+  min-width: 49%;
+  width: 49%;
+}
+
+.about .content .textBx p {
+  color: var(--white-color);
+}
+
+.about .content .imgBx {
+  margin-left: 40px;
+}
+
+.about .content .imgBx img{
+  max-width: 100%;
 }
