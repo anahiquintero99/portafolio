@@ -406,6 +406,10 @@ p {
     right: 40px;
   }
 
+  p {
+    margin: 20px 10px;
+  }
+
   .sci {
     left: 40px;
   }
