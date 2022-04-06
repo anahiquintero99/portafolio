@@ -4,6 +4,7 @@
   --black-color: #000;
   --gray-color: #333;
   --blue-color: #ff5c8d;
+  --bg-hablities: #f5f5f5;
 }
 
 * {
@@ -249,4 +250,22 @@ p {
 
 .about .content .imgBx img{
   max-width: 100%;
+}
+
+/* Habilidades */
+
+.services .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.services .content .servicesBx {
+  padding: 40px 20px;
+  max-width: 340px;
+  margin: 20px;
+  transition: 0.5s;
+  text-align: center;
+  background: var(--bg-hablities);
 }
