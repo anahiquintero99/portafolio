@@ -156,7 +156,7 @@ p {
   font-size: 2em;
   margin: 10px 0;
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
@@ -167,7 +167,7 @@ p {
 .sci {
   position: absolute;
   left: 10px;
-  bottom: 10px;
+  bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -381,4 +381,61 @@ p {
 
 .copyright p span {
   color: var(--blue-color);
+}
+
+
+/* Responsive */
+ @media (max-width: 991px)
+{
+  .banner .imgSidebar {
+    display: none;
+  }
+
+  .banner .contentBx, .sidebar {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .logoText {
+    left: 40px;
+  }
+
+  .toggle {
+    right: 40px;
+  }
+
+  .sci {
+    left: 40px;
+  }
+
+  .sci li{
+    width: 50px;
+    height: 150px;
+  }
+  section {
+    padding: 40px;
+  }
+
+  .about .content {
+    flex-direction: column;
+  }
+
+  .about .content .textBx {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .about .content {
+    margin-top: 0;
+  }
+
+  .about .content .servicesBx {
+    padding: 30px 20px;
+    max-width: 340px;
+    margin: 10px;
+  }
+
+  .work .content .workBx {
+    width: 350px;
+    height: 135px;
 }
