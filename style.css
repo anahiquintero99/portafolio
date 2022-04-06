@@ -64,6 +64,7 @@ section {
   object-fit: cover;
 }
 
+/* Home*/
 .banner .contentBx,
 .sidebar {
   position: absolute;
@@ -109,7 +110,7 @@ section {
 
 p {
   font-size: 1.1em;
-  margin: 20px 0;
+  margin: 20px 100px;
   font-weight: 300;
 }
 
@@ -215,7 +216,6 @@ p {
   background: var(--black-color);
 }
 
-.title.white h2,
 .title.white p {
   color: var(--white-color);
 }
@@ -223,6 +223,8 @@ p {
 .title.white h2::before {
   background: var(--white-color);
 }
+
+/* Sobre mi*/
 
 .about {
   background: var(--black-color);
@@ -232,12 +234,12 @@ p {
 .about .content {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .about .content .textBx {
   min-width: 49%;
-  width: 49%;
+  width: 40%;
 }
 
 .about .content .textBx p {
@@ -262,9 +264,9 @@ p {
 }
 
 .services .content .servicesBx {
-  padding: 40px 20px;
+  padding: 40px 40px;
   max-width: 340px;
-  margin: 20px;
+  margin: 40px;
   transition: 0.5s;
   text-align: center;
   background: var(--bg-hablities);
@@ -438,4 +440,5 @@ p {
   .work .content .workBx {
     width: 350px;
     height: 135px;
+  }
 }
